@@ -1,0 +1,19 @@
+#include <stdio.h>
+void primenumber(int c,int d){
+    int e;
+    e=(c>d)?c:d;
+    while(1){
+        if(e%c==0 && e%d==0){
+            printf("%d",e);
+            break;
+        }
+        e++;
+    }
+}
+int main() {
+    int a,b;
+    scanf("%d\n",&a);
+    scanf("%d",&b);
+    primenumber(a,b);
+    return 0;
+}
